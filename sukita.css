@@ -8,7 +8,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(#7735ff, #8000bd 50%, #8000bd 60%, #7735ff);
+    background: linear-gradient(180deg, rgba(58,0,85,1) 15%, rgba(142,0,208,1) 50%, rgba(58,0,85,1) 85%);
 }
 header, footer{
     height: 100px;
@@ -17,4 +17,78 @@ header, footer{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    max-width: 100px;
+}
+.background-logo{
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content-text{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 240px;
+    transform: translateX(-100%);
+    text-align: end;
+}
+.content-image{
+    height: 85vh;
+}
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #ffffff;
+    padding-left: 75px;
+    justify-content: flex-start;
+}
+header span{
+    font-weight: 600;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    color: #ffffff;
+    font-weight: 100;
+}
+footer div{
+    width: 64px;
+}
+@media (max-width: 768px){
+    header{
+        padding-left: 25px;
+    }
+    .content-text{
+        transform: translateX(0%);
+        top: 80px;
+        font-size: 1rem;
+        width: 100px;
+        text-align: center;
+    }
+    .content-image{
+        height: 70vh;
+    }
+    footer{
+        padding: 0 25px;
+    }
 }
