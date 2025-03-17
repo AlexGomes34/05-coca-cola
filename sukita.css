@@ -3,3 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(#7735ff, #8000bd 50%, #8000bd 60%, #7735ff);
+}
+header, footer{
+    height: 100px;
+    background-color: #3a0055;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
